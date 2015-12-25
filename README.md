@@ -18,7 +18,7 @@ To install development dependencies, run:
 $ npm install
 ```
 
-To start a server with auto-reload and file-watching (using [live-server]), run:
+To start a server with auto-reload and file-watching (using [`live-server`]), run:
 
 ```
 $ npm start
