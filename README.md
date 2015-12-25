@@ -13,11 +13,13 @@ A `package.json` has been included for collaborators that would like
 to use [`Node.JS`] and [`npm`] for development.
 
 To install development dependencies, run:
+
 ```
 $ npm install
 ```
 
 To start a server with auto-reload and file-watching (using [live-server]), run:
+
 ```
 $ npm start
 ```
