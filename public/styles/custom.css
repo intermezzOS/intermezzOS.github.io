@@ -13,7 +13,7 @@ header h1 {
   margin: 0;
 }
 
-header {
+header, nav {
   padding: 40px 0;
 }
 
