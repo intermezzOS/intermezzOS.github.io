@@ -29,7 +29,11 @@ img {
 }
 
 a {
-    color: #0080a4;
+    color: #400AA7;
+}
+
+a:hover {
+    color: #0c0221;
 }
 
 .subtitle {
@@ -41,13 +45,13 @@ a {
 }
 
 .button.button-primary {
-    background: #0081a1;
-    border: #0081a1;
+    background: #400AA7;
+    border: #400AA7;
 }
 
 .button.button-primary:hover {
-    background: #006683;
-    border: #006683;
+    background: #260664;
+    border: #260664;
 }
 
 .footer {
