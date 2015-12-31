@@ -28,14 +28,36 @@ img {
     width: 100%;
 }
 
+a {
+    color: #400AA7;
+}
+
+a:hover {
+    color: #0c0221;
+}
+
 .subtitle {
-  color: #999;
+  color: #949494;
 }
 
 .center {
   text-align: center; 
 }
 
+.button.button-primary {
+    background: #400AA7;
+    border: #400AA7;
+}
+
+.button.button-primary:hover {
+    background: #260664;
+    border: #260664;
+}
+
 .footer {
   padding: 20px 0;
+}
+
+.footer .subtitle {
+    color: #767676;
 }
