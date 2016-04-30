@@ -23,17 +23,41 @@ nav {
   margin-bottom: 20px;
 }
 
+nav img {
+  width: 48px;
+}
+
+nav h4 {
+  display: inline;
+  position: relative;
+  bottom: 12px;
+  padding-left: 10px;
+}
+
+nav .button:last-child {
+  margin-right: 20px;
+}
+
 img {
-    max-width: 497px;
-    width: 100%;
+  max-width: 497px;
+  width: 100%;
 }
 
 a {
-    color: #400AA7;
+  color: #400AA7;
 }
 
 a:hover {
-    color: #0c0221;
+  color: #0c0221;
+  text-decoration: underline;  
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  margin-top: 20px;
 }
 
 .subtitle {

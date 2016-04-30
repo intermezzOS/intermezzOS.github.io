@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "live-server ./"
+    "start": "npm run build:blog && live-server ./",
+    "install": "cd blog && npm install",
+    "build:blog": "cd blog && wintersmith build"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/intermezzOS/intermezzOS.github.io",
   "devDependencies": {
-    "live-server": "^0.9.0"
+    "live-server": "^0.9.0",
+    "wintersmith": "^2.3.1"
   }
 }

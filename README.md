@@ -1,13 +1,14 @@
 # intermezzos.github.io
 > The website for intermezzOS | https://intermezzos.github.io
 
-`instermezzos.github.io` is a static site, using [Skeleton CSS],
-served by [GitHub Pages].
+`intermezzos.github.io` is a static site, using [Skeleton CSS],
+served by [GitHub Pages]. It uses [Wintersmith], a [`Node.js`] templating
+framework, for the blog.
 
 ## Development
 
 `intermezzos.github.io` is a static site, so you can use whatever
-development environment you prefer.
+development environment you prefer to edit the static html files.
 
 A `package.json` has been included for collaborators that would like
 to use [`Node.JS`] and [`npm`] for development.
@@ -24,9 +25,20 @@ To start a server with auto-reload and file-watching (using [`live-server`]), ru
 $ npm start
 ```
 
+## Blog
+
+To contribute to the blog, you must have a [`Node.JS`] environment as
+[Wintersmith] depends on it.
+
+To build the blog:
+```
+$ npm run build:blog
+```
+
 [Code of Conduct]
 
 
+[Hexo]: https://hexo.io/
 [Skeleton CSS]: http://getskeleton.com/
 [GitHub Pages]: https://pages.github.com/
 [`Node.js`]: https://nodejs.org/en/
