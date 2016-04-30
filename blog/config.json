@@ -1,6 +1,6 @@
 {
   "locals": {
-    "url": "http://localhost:8080",
+    "url": "/blog",
     "name": "The intermezzOS Blog",
     "owner": "Steve"
   },
