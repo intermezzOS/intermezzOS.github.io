@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build:blog && live-server ./",
-    "post-install": "cd blog && npm install",
+    "install": "cd blog && npm install",
     "build:blog": "cd blog && wintersmith build"
   },
   "repository": {
