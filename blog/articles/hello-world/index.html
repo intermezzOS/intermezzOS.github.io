@@ -6,34 +6,41 @@
     <meta name="viewport" content="width=device-width">
     <title>Hello, world! - The intermezzOS Blog
     </title>
-    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml">
+    <link rel="alternate" href="/blog/feed.xml" type="application/rss+xml">
+    <link rel="stylesheet" href="/../../public/vendor/Skeleton-2.0.4/css/normalize.css">
+    <link rel="stylesheet" href="/../../public/vendor/Skeleton-2.0.4/css/skeleton.css">
     <link rel="stylesheet" href="/blog/css/main.css">
+    <link rel="stylesheet" href="/../../public/styles/custom.css">
   </head>
   <body class="article-detail">
-    <link rel="stylesheet" href="/../../public/styles/custom.css">
-  </body>
-  <header class="header">
-    <div class="content-wrap">
-      <h1>Hello, world!</h1>
-      <p class="author">Written by <span class="author"><a href="mailto:steve@steveklabnik.com">Steve Klabnik</a></span>
-      </p>
+    <div class="container">
+      <nav class="u-cf u-full-width">
+        <div class="u-pull-left"><a href="/"><img src="/public/images/logo.png" alt="logo">
+            <h4 class="title">intermezz<strong>OS</strong><span class="subtitle">(a little OS)</span></h4></a></div><a href="https://webchat.freenode.net/#intermezzos" class="u-pull-right button">IRC: #intermezzOS</a>
+      </nav>
     </div>
-  </header>
-  <div id="content">
-    <div class="content-wrap">
-      <article class="article">
-        <section class="content"><p>We now have a basic blog going! Keep your eyes peeled for news about intermezzOS’s&nbsp;development.</p>
+    <header class="header">
+      <div class="content-wrap">
+        <h1>Hello, world!</h1>
+        <p class="author">Written by <span class="author"><a href="mailto:steve@steveklabnik.com">Steve Klabnik</a></span>
+        </p>
+      </div>
+    </header>
+    <div id="content">
+      <div class="content-wrap">
+        <article class="article">
+          <section class="content"><p>We now have a basic blog going! Keep your eyes peeled for news about intermezzOS’s&nbsp;development.</p>
 <p>Thanks to <a href="https://github.com/ashleygwilliams">@ashleygwilliams</a> for
 <a href="https://github.com/intermezzOS/intermezzOS.github.io/pull/23">implementing the
 blog</a>!</p>
 </section>
-      </article>
+        </article>
+      </div>
     </div>
-  </div>
-  <footer>
-    <div class="content-wrap">
-      <div class="nav"><a href="/blog/">&laquo; Full blog</a></div>
-      <section class="about"><div class="footer center container">
+    <footer>
+      <div class="content-wrap">
+        <div class="nav"><a href="/blog/">&laquo; Full blog</a></div>
+        <section class="about"><div class="footer center container">
   intermezzOS <span class="subtitle">(a little OS)</span>
   |
   <a href="https://www.github.com/intermezzos">GitHub</a>
@@ -45,11 +52,12 @@ blog</a>!</p>
   <a href="code-of-conduct.html">Code of Conduct</a>
 </div>
 
-      </section>
-      <section class="copy">
-        <p>&copy; 2016 Steve &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a>
-        </p>
-      </section>
-    </div>
-  </footer>
+        </section>
+        <section class="copy">
+          <p>&copy; 2016 Steve &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a>
+          </p>
+        </section>
+      </div>
+    </footer>
+  </body>
 </html>

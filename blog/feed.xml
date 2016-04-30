@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The intermezzOS Blog</title>
-    <atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link>
-    <link>http://localhost:8080</link>
+    <atom:link href="/blog/feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <link>/blog</link>
     <description></description>
     <pubDate>Tue, 30 Apr 2013 00:00:00 +0000</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
       <title>Hello, world!</title>
-      <link>http://localhost:8080/blog/articles/hello-world/</link>
+      <link>/blog/blog/articles/hello-world/</link>
       <pubDate>Tue, 30 Apr 2013 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/blog/articles/hello-world/</guid>
+      <guid isPermaLink="true">/blog/blog/articles/hello-world/</guid>
       <author></author>
       <description>&lt;p&gt;We now have a basic blog going! Keep your eyes peeled for news about intermezzOS’s development.&lt;/p&gt;
 &lt;p&gt;Thanks to &lt;a href=&quot;https://github.com/ashleygwilliams&quot;&gt;@ashleygwilliams&lt;/a&gt; for
