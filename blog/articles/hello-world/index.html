@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>README - The intermezzOS Blog
+    </title>
+    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml">
+    <link rel="stylesheet" href="/blog/css/main.css">
+  </head>
+  <body class="article-detail">
+    <link rel="stylesheet" href="/../../public/styles/custom.css">
+  </body>
+  <header class="header">
+    <div class="content-wrap">
+      <h1>README</h1>
+      <p class="author">Written by <span class="author"><a href="mailto:steve@steveklabnik.com">Steve Klabnik</a></span>
+      </p>
+    </div>
+  </header>
+  <div id="content">
+    <div class="content-wrap">
+      <article class="article">
+        <section class="content"><p>Welcome to your new blog! This is the default blog template with <span class="caps">RSS</span>, pagination and an archive. There are other templates available – run <code>wintersmith new --help</code> to list&nbsp;them.</p>
+<h2 id="_repeat-after-me-_-this-is-my-blog-there-are-many-like-it-but-this-one-is-mine-my-blog-is-my-best-friend-it-is-my-life-i-must-master-it-as-i-must-master-my-life-my-blog-without-me-is-useless-without-my-blog-i-am-useless-"><em>Repeat after me:</em> This is my blog. There are many like it, but this one is mine. My blog is my best friend. It is my life. I must master it as I must master my life. My blog, without me, is useless. Without my blog, I am&nbsp;useless.</h2>
+<p>Good, now, the directory structure of your blog is as&nbsp;follows:</p>
+<pre><code>├── config.json               &lt;- site configuration
+├── contents
+│   ├── about.md
+│   ├── archive.json
+│   ├── articles              &lt;– each article has its own directory
+│   │   ├── another-test
+│   │   │   └── index.md
+│   │   ├── bamboo-cutter
+│   │   │   ├── index.md
+│   │   │   └── taketori_monogatari.jpg
+│   │   ├── hello-world
+│   │   │   └── index.md
+│   │   ├── markdown-syntax
+│   │   │   └── index.md
+│   │   └── red-herring
+│   │       ├── banana.png
+│   │       └── index.md
+│   ├── authors               &lt;- author metadata, check author.jade
+│   │   ├── baker.json
+│   │   └── the-wintersmith.json
+│   ├── css
+│   │   └── main.css
+│   └── feed.json
+├── plugins
+│   └── paginator.coffee      &lt;- paginator plugin
+├── templates
+│   ├── archive.jade
+│   ├── article.jade
+│   ├── author.jade
+│   ├── feed.jade
+│   ├── index.jade
+│   └── layout.jade
+└── views
+    └── articles.coffee       &lt;- view that lists articles
+</code></pre><p>Articles are sorted by date and 3 are shown per page, you can configure this and more in config.json. Check paginator.coffee for all options related to pagination, most plugins also have their own&nbsp;options.</p>
+<h3 id="a-typical-article">A typical&nbsp;article</h3>
+<pre><code class="lang-markdown">---
+title: Hear me blog
+author: johndoe
+<span class="section">date: 2012-12-12 12:12
+---</span>
+
+This will be shown as the article excerpt.
+
+<span class="section">## A h2, hr or &lt;span class="more"&gt; marks where the intro cuts off</span>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</code></pre>
+<h2 id="links-in-the-markdown-to-other-items-in-the-content-tree-will-be-resolved-for-you-">Links in the markdown to other items in the content tree will be resolved for&nbsp;you.</h2>
+<p>For example a link to <code>../bamboo-cutter/index.md</code> resolves to <a href="/blog/articles/bamboo-cutter/index.md"><code>/articles/bamboo-cutter/</code></a>.</p>
+<hr>
+<p>This is where I leave you to your own devices. Join <strong>#wintersmith</strong> on freenode if you have any&nbsp;questions.</p>
+</section>
+      </article>
+    </div>
+  </div>
+  <footer>
+    <div class="content-wrap">
+      <div class="nav"><a href="/blog/">&laquo; Full blog</a></div>
+      <section class="about"><div class="footer center container">
+  intermezzOS <span class="subtitle">(a little OS)</span>
+  |
+  <a href="https://www.github.com/intermezzos">GitHub</a>
+  |
+  <a href="https://webchat.freenode.net/#intermezzos">IRC Freenode</a>
+  |
+  <a href="mailto:steve@steveklabnik.com">Contact</a>
+  |
+  <a href="code-of-conduct.html">Code of Conduct</a>
+</div>
+
+      </section>
+      <section class="copy">
+        <p>&copy; 2016 Steve &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a>
+        </p>
+      </section>
+    </div>
+  </footer>
+</html>

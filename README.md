@@ -2,7 +2,7 @@
 > The website for intermezzOS | https://intermezzos.github.io
 
 `intermezzos.github.io` is a static site, using [Skeleton CSS],
-served by [GitHub Pages]. It uses [Hexo], a [`Node.js`] blog
+served by [GitHub Pages]. It uses [Wintersmith], a [`Node.js`] templating
 framework, for the blog.
 
 ## Development
@@ -28,25 +28,11 @@ $ npm start
 ## Blog
 
 To contribute to the blog, you must have a [`Node.JS`] environment as
-[Hexo] depends on it.
-
-To install [Hexo] globally, run:
-
-```
-$ npm install hexo-cli -g
-```
-
-To create a new post:
-
-```
-$ cd blog
-$ hexo new "you can be a kernel dev!"
-```
+[Wintersmith] depends on it.
 
 To build the blog:
-
 ```
-$ npm run build
+$ npm run build:blog
 ```
 
 [Code of Conduct]

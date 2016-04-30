@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "npm run build:blog && live-server ./",
     "post-install": "cd blog && npm install",
-    "start": "npm run build && live-server ./",
-    "build": "cd blog && ../node_modules/hexo-cli/bin/hexo generate"
+    "build:blog": "cd blog && wintersmith build"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/intermezzOS/intermezzOS.github.io",
   "devDependencies": {
-    "hexo-cli": "^0.2.0",
-    "live-server": "^0.9.0"
+    "live-server": "^0.9.0",
+    "wintersmith": "^2.3.1"
   }
 }

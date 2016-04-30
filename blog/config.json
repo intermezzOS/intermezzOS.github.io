@@ -1,0 +1,27 @@
+{
+  "locals": {
+    "url": "http://localhost:8080",
+    "name": "The intermezzOS Blog",
+    "owner": "Steve"
+  },
+  "plugins": [
+    "./plugins/paginator.coffee"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 3
+  },
+  "output": "./",
+  "baseUrl": "/blog"
+}
