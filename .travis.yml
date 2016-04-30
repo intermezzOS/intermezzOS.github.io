@@ -3,7 +3,7 @@ script:
   - npm install
   - npm run build:blog
 after_success:
-  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash deploy.sh
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "dev" && bash deploy.sh
 env:
   global:
     secure: CrZM7PE+N4UaWWWuBuHFQGH/0JrF/LlM4/QFzP6WWvNT8+fQtLUsfb+5h1XM5gi7ZIfAZ9szACO0ztCXB5nR4g1y4ZemEgidageygDnDZNZRu4U5Ca2Q32lQlpADvIqJpyU5FEy3bJnDjIGX7ULUkAnFlQeHCoJocyds+7E8ypLB0Oy7xEE13sPI44hOjDW+PTklhavqdJrGU1k9tCQ0FHIMRWXT4K7iEsCyvz4gLibJ5ZRSKVNFM3hWkzERlJz8QqmYPeG+E9uPq3l1o8JdQIcS1kBG6Ob67nZvUrcHYMHXaJyQoNTNVFUay6Pi/XJsM6OQeH2WOEkkNg3b1wm6Ly50/Y7ANZ0of67KH6Q81/23oG9qljv5sRhwGklt3SoOV6fScGwOL7UzRxqO3ykDzm31dxeTBDjQlARxiqARapIp/NNlALa7yBWnWwROpb+2TzzKmUdYvqKQ3ieLtZDtTm6h10ud8whiL/4dwtPsYFM+ze5A70F/M84zRspwQ4GxebXKDjMiAbRJjTLLkIojkg3y0xQbsumq1LgctKcz7/0eESIH7urk9H3ZL6kJRG2GW65hpuKTRRTp1ylcRrXF1vX4MqOTiNU1c+17S5XM/Xixu6L2AYLqFxSE5TN7n2fpbcMuxAx1NpNrRc6Ldn/GuXSdktH76ichiIl/Yt0sUUw=
