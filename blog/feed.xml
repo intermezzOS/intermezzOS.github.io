@@ -5,13 +5,13 @@
     <atom:link href="/blog/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>/blog</link>
     <description></description>
-    <pubDate>Tue, 30 Apr 2013 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 30 Apr 2016 00:00:00 +0000</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
       <title>Hello, world!</title>
       <link>/blog/blog/articles/hello-world/</link>
-      <pubDate>Tue, 30 Apr 2013 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 30 Apr 2016 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">/blog/blog/articles/hello-world/</guid>
       <author></author>
       <description>&lt;p&gt;We now have a basic blog going! Keep your eyes peeled for news about intermezzOS’s development.&lt;/p&gt;
