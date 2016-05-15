@@ -3,7 +3,7 @@ extends layout
 
 block content
   include author
-  each article in articles
+  each article in articles.reverse()
     article.article.intro
       header
         p.date
