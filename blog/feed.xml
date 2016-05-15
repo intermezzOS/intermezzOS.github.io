@@ -2,27 +2,43 @@
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The intermezzOS Blog</title>
-    <atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link>
-    <link>http://localhost:8080</link>
+    <atom:link href="/blog/feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <link>/blog</link>
     <description></description>
-    <pubDate>Mon, 29 Apr 2013 20:00:00 -0400</pubDate>
+    <pubDate>Fri, 29 Apr 2016 20:00:00 -0400</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
+      <title>Hello, world!</title>
+      <link>/blog/blog/articles/hello-world/</link>
+      <pubDate>Fri, 29 Apr 2016 20:00:00 -0400</pubDate>
+      <guid isPermaLink="true">/blog/blog/articles/hello-world/</guid>
+      <author></author>
+      <description>&lt;p&gt;We now have a basic blog going! Keep your eyes peeled for news about intermezzOS’s development.&lt;/p&gt;
+&lt;p&gt;Thanks to &lt;a href=&quot;https://github.com/ashleygwilliams&quot;&gt;@ashleygwilliams&lt;/a&gt; for
+&lt;a href=&quot;https://github.com/intermezzOS/intermezzOS.github.io/pull/23&quot;&gt;implementing the
+blog&lt;/a&gt;!&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>This week in intermezzOS 1</title>
-      <link>http://localhost:8080/blog/articles/twii1/</link>
+      <link>/blog/blog/articles/twii1/</link>
       <pubDate>Mon, 29 Apr 2013 20:00:00 -0400</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/blog/articles/twii1/</guid>
+      <guid isPermaLink="true">/blog/blog/articles/twii1/</guid>
       <author></author>
       <description>&lt;p&gt;Hello and welcome to the first issue of This Week in intermezzOS! intermezzOS
-is a tiny learning operating system with a companion book. This is a
-weekly(ish) summary of its progress and community.&lt;/p&gt;
+is a learning operating system with a companion book, written in Rust for the
+&lt;code&gt;x86_64&lt;/code&gt; platform. This is a weekly(ish) summary of its progress and community.
+For other news about the project, you can &lt;a href=&quot;https://twitter.com/intermezzosrs&quot;&gt;follow us on Twitter:
+@intermezzOSrs&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This week’s edition was edited by: steveklabnik.&lt;/p&gt;
 &lt;h2 id=&quot;updates-to-the-book&quot;&gt;Updates to the book&lt;/h2&gt;
+&lt;p&gt;Repository for the book: &lt;a href=&quot;https://github.com/intermezzOS/book&quot;&gt;https://github.com/intermezzOS/book&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Today, the latest chapter of the book was merged: the start of &lt;a href=&quot;http://intermezzos.github.io/book/transitioning-to-long-mode.html&quot;&gt;Chapter 4&lt;/a&gt;:
 Transitioning to Long Mode. We’re almost done with assembly code and almost on
 to Rust, finally!&lt;/p&gt;
 &lt;h2 id=&quot;updates-to-the-kernel&quot;&gt;Updates to the kernel&lt;/h2&gt;
+&lt;p&gt;Repository for the kernel: &lt;a href=&quot;https://github.com/intermezzOS/kernel&quot;&gt;https://github.com/intermezzOS/kernel&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The kernel hasn’t seen a ton of work as of late, since it’s farther ahead than
 the book, but there’s been a few small things:&lt;/p&gt;
 &lt;ul&gt;
@@ -39,22 +55,13 @@ freshly downloaded the source.&lt;/li&gt;
 I had shared an anecdote about a bug; the bug happened because &lt;code&gt;kmain()&lt;/code&gt; could
 return. It shouldn’t be able to, though, so this is more correct.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&quot;rfcs&quot;&gt;RFCs&lt;/h2&gt;
+&lt;p&gt;Repository for RFCs: &lt;a href=&quot;https://github.com/intermezzOS/rfcs&quot;&gt;https://github.com/intermezzOS/rfcs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We haven’t had any new RFCs lately.&lt;/p&gt;
 &lt;h2 id=&quot;other-news&quot;&gt;Other news&lt;/h2&gt;
 &lt;p&gt;UPenn is using Rust for a class of theirs: CIS 198. Steve dropped by and did a
 guest lecture on intermezzOS, which you can &lt;a href=&quot;https://www.youtube.com/watch?v=iTSx-8qK4Hw&amp;amp;feature=youtu.be&quot;&gt;watch on
 YouTube&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Hello, world!</title>
-      <link>http://localhost:8080/blog/articles/hello-world/</link>
-      <pubDate>Mon, 29 Apr 2013 20:00:00 -0400</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/blog/articles/hello-world/</guid>
-      <author></author>
-      <description>&lt;p&gt;We now have a basic blog going! Keep your eyes peeled for news about intermezzOS’s development.&lt;/p&gt;
-&lt;p&gt;Thanks to &lt;a href=&quot;https://github.com/ashleygwilliams&quot;&gt;@ashleygwilliams&lt;/a&gt; for
-&lt;a href=&quot;https://github.com/intermezzOS/intermezzOS.github.io/pull/23&quot;&gt;implementing the
-blog&lt;/a&gt;!&lt;/p&gt;
 </description>
     </item>
   </channel>
