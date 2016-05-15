@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <title>The intermezzOS Blog
+    <title>This week in intermezzOS 1 - The intermezzOS Blog
     </title>
     <link rel="alternate" href="/blog/feed.xml" type="application/rss+xml">
     <link rel="stylesheet" href="/../../public/vendor/Skeleton-2.0.4/css/normalize.css">
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/blog/css/main.css">
     <link rel="stylesheet" href="/../../public/styles/custom.css">
   </head>
-  <body>
+  <body class="article-detail">
     <div class="container">
       <nav class="u-cf u-full-width">
         <div class="u-pull-left"><a href="/"><img src="/public/images/logo.png" alt="logo">
@@ -21,45 +21,50 @@
     </div>
     <header class="header">
       <div class="content-wrap">
-        <div class="logo">
-          <h1><a href="/blog">The intermezzOS Blog</a></h1>
-          <p class="description"></p>
-        </div>
+        <h1>This week in intermezzOS 1</h1>
+        <p class="author">Written by <span class="author"><a href="mailto:steve@steveklabnik.com">Steve Klabnik</a></span>
+        </p>
       </div>
     </header>
     <div id="content">
       <div class="content-wrap">
-        <article class="article intro">
-          <header>
-            <p class="date"><span>30 04 2016</span></p>
-            <h2><a href="/blog/articles/hello-world/">Hello, world!</a></h2>
-          </header>
-          <section class="content"><p>We now have a basic blog going! Keep your eyes peeled for news about intermezzOS’s&nbsp;development.</p>
-<p>Thanks to <a href="https://github.com/ashleygwilliams">@ashleygwilliams</a> for
-<a href="https://github.com/intermezzOS/intermezzOS.github.io/pull/23">implementing the
-blog</a>!</p>
-
-          </section>
-        </article>
-        <article class="article intro">
-          <header>
-            <p class="date"><span>30 04 2013</span></p>
-            <h2><a href="/blog/articles/twii1/">This week in intermezzOS 1</a></h2>
-          </header>
+        <article class="article">
           <section class="content"><p>Hello and welcome to the first issue of This Week in intermezzOS! intermezzOS
 is a tiny learning operating system with a companion book. This is a
 weekly(ish) summary of its progress and&nbsp;community.</p>
 <p>This week’s edition was edited by:&nbsp;steveklabnik.</p>
-
-            <p class="more"><a href="/blog/articles/twii1/">more</a></p>
-          </section>
+<h2 id="updates-to-the-book">Updates to the&nbsp;book</h2>
+<p>Today, the latest chapter of the book was merged: the start of <a href="http://intermezzos.github.io/book/transitioning-to-long-mode.html">Chapter 4</a>:
+Transitioning to Long Mode. We’re almost done with assembly code and almost on
+to Rust,&nbsp;finally!</p>
+<h2 id="updates-to-the-kernel">Updates to the&nbsp;kernel</h2>
+<p>The kernel hasn’t seen a ton of work as of late, since it’s farther ahead than
+the book, but there’s been a few small&nbsp;things:</p>
+<ul>
+<li><a href="https://github.com/intermezzOS/kernel/commit/b294480f404b1fccbf745ea53affca9b48b9e482">Users no longer need to build their own
+libcore.</a>
+This is a pretty big usability improvement to the build&nbsp;system</li>
+<li><a href="https://github.com/intermezzOS/kernel/pull/27">A new make target,
+distclean.</a>. Building on top
+of the new libcore work, we don’t want to have to re-build it every single
+time. So where previously, <code>clean</code> cleaned everything, now <code>clean</code> will only
+clean the kernel code, and <code>distclean</code> will clean everything as though you
+freshly downloaded the&nbsp;source.</li>
+<li><a href="https://github.com/intermezzOS/kernel/pull/28"><code>kmain()</code> was marked as divergent</a>.
+I had shared an anecdote about a bug; the bug happened because <code>kmain()</code> could
+return. It shouldn’t be able to, though, so this is more&nbsp;correct.</li>
+</ul>
+<h2 id="other-news">Other&nbsp;news</h2>
+<p>UPenn is using Rust for a class of theirs: <span class="caps">CIS</span> 198. Steve dropped by and did a
+guest lecture on intermezzOS, which you can <a href="https://www.youtube.com/watch?v=iTSx-8qK4Hw&amp;feature=youtu.be">watch on
+YouTube</a>.</p>
+</section>
         </article>
       </div>
     </div>
     <footer>
       <div class="content-wrap">
-        <div class="nav"><a href="/blog/archive.html">&laquo; Archives</a>
-        </div>
+        <div class="nav"><a href="/blog/">&laquo; Full blog</a></div>
         <section class="about"><div class="footer center container">
   intermezzOS <span class="subtitle">(a little OS)</span>
   |
