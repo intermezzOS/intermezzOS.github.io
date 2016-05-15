@@ -15,6 +15,8 @@ This week’s edition was edited by: steveklabnik.
 
 ## Updates to the book
 
+Repository for the book: [https://github.com/intermezzOS/book](https://github.com/intermezzOS/book)
+
 Today, the latest chapter of the book was merged: the start of [Chapter 4]:
 Transitioning to Long Mode. We’re almost done with assembly code and almost on
 to Rust, finally!
@@ -22,6 +24,8 @@ to Rust, finally!
 [Chapter 4]: http://intermezzos.github.io/book/transitioning-to-long-mode.html
 
 ## Updates to the kernel
+
+Repository for the kernel: [https://github.com/intermezzOS/kernel](https://github.com/intermezzOS/kernel)
 
 The kernel hasn’t seen a ton of work as of late, since it’s farther ahead than
 the book, but there’s been a few small things:
@@ -38,6 +42,12 @@ the book, but there’s been a few small things:
 * [`kmain()` was marked as divergent](https://github.com/intermezzOS/kernel/pull/28).
   I had shared an anecdote about a bug; the bug happened because `kmain()` could
   return. It shouldn’t be able to, though, so this is more correct.
+
+## RFCs
+
+Repository for RFCs: [https://github.com/intermezzOS/rfcs](https://github.com/intermezzOS/rfcs)
+
+We haven’t had any new RFCs lately.
 
 ## Other news
 

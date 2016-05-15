@@ -33,10 +33,12 @@ For other news about the project, you can &lt;a href=&quot;https://twitter.com/i
 @intermezzOSrs&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This week’s edition was edited by: steveklabnik.&lt;/p&gt;
 &lt;h2 id=&quot;updates-to-the-book&quot;&gt;Updates to the book&lt;/h2&gt;
+&lt;p&gt;Repository for the book: &lt;a href=&quot;https://github.com/intermezzOS/book&quot;&gt;https://github.com/intermezzOS/book&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Today, the latest chapter of the book was merged: the start of &lt;a href=&quot;http://intermezzos.github.io/book/transitioning-to-long-mode.html&quot;&gt;Chapter 4&lt;/a&gt;:
 Transitioning to Long Mode. We’re almost done with assembly code and almost on
 to Rust, finally!&lt;/p&gt;
 &lt;h2 id=&quot;updates-to-the-kernel&quot;&gt;Updates to the kernel&lt;/h2&gt;
+&lt;p&gt;Repository for the kernel: &lt;a href=&quot;https://github.com/intermezzOS/kernel&quot;&gt;https://github.com/intermezzOS/kernel&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The kernel hasn’t seen a ton of work as of late, since it’s farther ahead than
 the book, but there’s been a few small things:&lt;/p&gt;
 &lt;ul&gt;
@@ -53,6 +55,9 @@ freshly downloaded the source.&lt;/li&gt;
 I had shared an anecdote about a bug; the bug happened because &lt;code&gt;kmain()&lt;/code&gt; could
 return. It shouldn’t be able to, though, so this is more correct.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&quot;rfcs&quot;&gt;RFCs&lt;/h2&gt;
+&lt;p&gt;Repository for RFCs: &lt;a href=&quot;https://github.com/intermezzOS/rfcs&quot;&gt;https://github.com/intermezzOS/rfcs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We haven’t had any new RFCs lately.&lt;/p&gt;
 &lt;h2 id=&quot;other-news&quot;&gt;Other news&lt;/h2&gt;
 &lt;p&gt;UPenn is using Rust for a class of theirs: CIS 198. Steve dropped by and did a
 guest lecture on intermezzOS, which you can &lt;a href=&quot;https://www.youtube.com/watch?v=iTSx-8qK4Hw&amp;amp;feature=youtu.be&quot;&gt;watch on
