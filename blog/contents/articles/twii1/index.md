@@ -6,8 +6,8 @@ template: article.jade
 ---
 
 Hello and welcome to the first issue of This Week in intermezzOS! intermezzOS
-is a tiny learning operating system with a companion book. This is a
-weekly(ish) summary of its progress and community.
+is a learning operating system with a companion book, written in Rust for the
+`x86_64` platform. This is a weekly(ish) summary of its progress and community.
 
 This week’s edition was edited by: steveklabnik.
 
