@@ -27,8 +27,8 @@ blog&lt;/a&gt;!&lt;/p&gt;
       <guid isPermaLink="true">/blog/blog/articles/twii1/</guid>
       <author></author>
       <description>&lt;p&gt;Hello and welcome to the first issue of This Week in intermezzOS! intermezzOS
-is a tiny learning operating system with a companion book. This is a
-weekly(ish) summary of its progress and community.&lt;/p&gt;
+is a learning operating system with a companion book, written in Rust for the
+&lt;code&gt;x86_64&lt;/code&gt; platform. This is a weekly(ish) summary of its progress and community.&lt;/p&gt;
 &lt;p&gt;This week’s edition was edited by: steveklabnik.&lt;/p&gt;
 &lt;h2 id=&quot;updates-to-the-book&quot;&gt;Updates to the book&lt;/h2&gt;
 &lt;p&gt;Today, the latest chapter of the book was merged: the start of &lt;a href=&quot;http://intermezzos.github.io/book/transitioning-to-long-mode.html&quot;&gt;Chapter 4&lt;/a&gt;:
