@@ -1,2 +1,4 @@
 node_modules
 blog/*.html
+blog/*.xml
+blog/articles/
