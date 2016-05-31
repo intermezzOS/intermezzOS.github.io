@@ -1,7 +1,7 @@
 ---
 title: This week in intermezzOS 1
 author: steve
-date: 2013-04-30
+date: 2016-04-30
 template: article.jade
 ---
 

@@ -70,21 +70,9 @@ size of the buffer. (&lt;a href=&quot;https://github.com/intermezzOS/kernel/pull
 </description>
     </item>
     <item>
-      <title>Hello, world!</title>
-      <link>/blog/blog/articles/hello-world/</link>
-      <pubDate>Sat, 30 Apr 2016 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">/blog/blog/articles/hello-world/</guid>
-      <author></author>
-      <description>&lt;p&gt;We now have a basic blog going! Keep your eyes peeled for news about intermezzOS’s development.&lt;/p&gt;
-&lt;p&gt;Thanks to &lt;a href=&quot;https://github.com/ashleygwilliams&quot;&gt;@ashleygwilliams&lt;/a&gt; for
-&lt;a href=&quot;https://github.com/intermezzOS/intermezzOS.github.io/pull/23&quot;&gt;implementing the
-blog&lt;/a&gt;!&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>This week in intermezzOS 1</title>
       <link>/blog/blog/articles/twii1/</link>
-      <pubDate>Tue, 30 Apr 2013 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 30 Apr 2016 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">/blog/blog/articles/twii1/</guid>
       <author></author>
       <description>&lt;p&gt;Hello and welcome to the first issue of This Week in intermezzOS! intermezzOS
@@ -123,6 +111,18 @@ return. It shouldn’t be able to, though, so this is more correct.&lt;/li&gt;
 &lt;p&gt;UPenn is using Rust for a class of theirs: CIS 198. Steve dropped by and did a
 guest lecture on intermezzOS, which you can &lt;a href=&quot;https://www.youtube.com/watch?v=iTSx-8qK4Hw&amp;amp;feature=youtu.be&quot;&gt;watch on
 YouTube&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Hello, world!</title>
+      <link>/blog/blog/articles/hello-world/</link>
+      <pubDate>Fri, 29 Apr 2016 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">/blog/blog/articles/hello-world/</guid>
+      <author></author>
+      <description>&lt;p&gt;We now have a basic blog going! Keep your eyes peeled for news about intermezzOS’s development.&lt;/p&gt;
+&lt;p&gt;Thanks to &lt;a href=&quot;https://github.com/ashleygwilliams&quot;&gt;@ashleygwilliams&lt;/a&gt; for
+&lt;a href=&quot;https://github.com/intermezzOS/intermezzOS.github.io/pull/23&quot;&gt;implementing the
+blog&lt;/a&gt;!&lt;/p&gt;
 </description>
     </item>
   </channel>

@@ -1,7 +1,7 @@
 ---
 title: Hello, world!
 author: steve
-date: 2016-04-30
+date: 2016-04-29
 template: article.jade
 ---
 
