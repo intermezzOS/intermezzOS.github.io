@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>This week in intermezzOS 2 - The intermezzOS Blog
+    </title>
+    <link rel="alternate" href="/blog/feed.xml" type="application/rss+xml">
+    <link rel="stylesheet" href="/../../public/vendor/Skeleton-2.0.4/css/normalize.css">
+    <link rel="stylesheet" href="/../../public/vendor/Skeleton-2.0.4/css/skeleton.css">
+    <link rel="stylesheet" href="/blog/css/main.css">
+    <link rel="stylesheet" href="/../../public/styles/custom.css">
+  </head>
+  <body class="article-detail">
+    <div class="container">
+      <nav class="u-cf u-full-width">
+        <div class="u-pull-left"><a href="/"><img src="/public/images/logo.png" alt="logo">
+            <h4 class="title">intermezz<strong>OS</strong><span class="subtitle">(a little OS)</span></h4></a></div><a href="https://webchat.freenode.net/#intermezzos" class="u-pull-right button">IRC: #intermezzOS</a>
+      </nav>
+    </div>
+    <header class="header">
+      <div class="content-wrap">
+        <h1>This week in intermezzOS 2</h1>
+        <p class="author">Written by <span class="author"><a href="mailto:ashley666ashley@gmail.com">Ashley Williams</a></span>
+        </p>
+      </div>
+    </header>
+    <div id="content">
+      <div class="content-wrap">
+        <article class="article">
+          <section class="content"><p>It’s been a whole month since our last weekly(-<span class="caps">ISH</span>) update- and we’ve
+had a lot of great contributions and new contributors. Highlights include
+a new chapter, “Jumping into Long Mode”, native support on Windows 
+machines thanks to Bash on Ubuntu on Windows, and an awesome fix to a 
+bug in the scrolling implementation. Read on for&nbsp;more!</p>
+<p>For other news about the project, you can <a href="https://twitter.com/intermezzosrs">follow us on Twitter:
+@intermezzOSrs</a>.</p>
+<p>This week’s edition was edited by: <a href="http://www.meetup.com/BostonRust/events/230419544/">ashleygwilliams</a>.</p>
+<h2 id="updates-to-the-book">Updates to the&nbsp;book</h2>
+<p>Repository for the book: <a href="https://github.com/intermezzOS/book">https://github.com/intermezzOS/book</a></p>
+<ul>
+<li>Added a new section, “Paging”,  to a new chapter, “Jumping into Long Mode”.
+Thanks to everyone for the great comments during the review of this large <span class="caps">PR</span>!
+(<a href="https://github.com/intermezzOS/book/pull/91">#91</a>, <a href="https://github.com/steveklabnik">steveklabnik</a>)</li>
+<li>Added a <code>git clone</code> step to the <code>README</code>. (<a href="https://github.com/intermezzOS/book/pull/92">#92</a>, <a href="https://github.com/dleve123">dleve123</a>)</li>
+<li>Improved the table formatting in the Paging section, and added a comment
+to a code sample. (<a href="https://github.com/intermezzOS/book/pull/93">#93</a>, <a href="https://github.com/steveklabnik">steveklabnik</a>)</li>
+<li>Added a section to <code>windows.md</code> that provided specific instructions to 
+Windows 10 Insider Preview users who want to use Bash on Ubuntu on Windows.
+This allows them to natively run intermezzOS- no <span class="caps">VM</span> requried! (<a href="https://github.com/intermezzOS/book/pull/96">#96</a>, 
+<a href="https://github.com/DJSundog">DJSundog</a>)</li>
+<li>Updated Rust installation instructions to use <code>rustup</code>. (<a href="https://github.com/intermezzOS/book/pull/95">#95</a>, <a href="https://github.com/DJSundog">DJSundog</a>)</li>
+<li>Fixed a typo in the Paging section. (<a href="https://github.com/intermezzOS/book/pull/97">#97</a>, <a href="https://github.com/smaximov">smaximov</a>)</li>
+<li>Corrected a mistake in the explanation of left-shift. (<a href="https://github.com/intermezzOS/book/pull/98">#98</a>, <a href="https://github.com/dhardy">dhardy</a>)</li>
+<li>Added a new section, “Setting Up a <span class="caps">GDT</span>”, to the “Jumping into Long Mode”
+chapter. (<a href="https://github.com/intermezzOS/book/pull/94">#94</a>, <a href="https://github.com/steveklabnik">steveklabnik</a>)</li>
+<li>Fixed another typo in the Paging section. (<a href="https://github.com/intermezzOS/book/pull/102">#102</a>, <a href="https://github.com/Razican">Razican</a>)</li>
+<li>Elaborated on and improved the introduction of the Paging section thanks to
+<a href="https://github.com/LaylConway">LaylConway</a>‘s feedback. (<a href="https://github.com/intermezzOS/book/pull/101">#101</a>, <a href="https://github.com/rylev">rylev</a>)</li>
+<li>Fix a lingering mention of <code>multi-rust</code> to mention <code>rust up</code>. (<a href="https://github.com/intermezzOS/book/pull/107">#107</a>, 
+fixes <a href="https://github.com/intermezzOS/book/issues/106">#106</a>, <a href="https://github.com/moosingin3space">moosingin3space</a>)</li>
+<li>Clarify that <code>mul</code> takes just one argument in the Paging section. (<a href="https://github.com/intermezzOS/book/pull/109">#109</a>, 
+<a href="https://github.com/Digipom">Digipom</a>)</li>
+<li>Fix a typo in the “Running in <span class="caps">QEMU</span>” section. (<a href="https://github.com/intermezzOS/book/pull/111">#111</a>, <a href="https://github.com/jdanford">jdanford</a>)</li>
+<li>Fix a type in the “Hello World” section. (<a href="https://github.com/intermezzOS/book/pull/112">#112</a>, <a href="https://github.com/jdanford">jdanford</a>) </li>
+</ul>
+<h2 id="updates-to-the-kernel">Updates to the&nbsp;kernel</h2>
+<ul>
+<li><p>Fixed a bug in the implementation of scrolling that incorrectly calculated
+the position index if it was the same size as the buffer. Also reduced the
+size of the buffer. (<a href="https://github.com/intermezzOS/kernel/pull/30">#30</a>, fixes <a href="https://github.com/intermezzOS/kernel/issues/3">#3</a>, <a href="https://github.com/WilsonGiese">WilsonGiese</a>)</p>
+</li>
+<li><p><span class="caps">UPCOMING</span>: Large refactor of the interrupt table. (<a href="https://github.com/intermezzOS/kernel/tree/interrupt_refactor"><code>interrupt_refactor</code></a> branch, 
+<a href="https://github.com/steveklabnik">steveklabnik</a>)</p>
+</li>
+</ul>
+<h2 id="rfcs">RFCs</h2>
+<p>Repository for RFCs: <a href="https://github.com/intermezzOS/rfcs">https://github.com/intermezzOS/rfcs</a></p>
+<p>We haven’t had any new RFCs&nbsp;lately.</p>
+<h2 id="other-news">Other&nbsp;news</h2>
+<ul>
+<li><a href="https://github.com/steveklabnik">steveklabnik</a> gave a talk about intermezzOS at [Boston Rust] last Wednesday, 25 May&nbsp;2016</li>
+</ul>
+</section>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="content-wrap">
+        <div class="nav"><a href="/blog/">&laquo; Full blog</a></div>
+        <section class="about"><div class="footer center container">
+  intermezzOS <span class="subtitle">(a little OS)</span>
+  |
+  <a href="https://www.github.com/intermezzos">GitHub</a>
+  |
+  <a href="https://webchat.freenode.net/#intermezzos">IRC Freenode</a>
+  |
+  <a href="mailto:steve@steveklabnik.com">Contact</a>
+  |
+  <a href="code-of-conduct.html">Code of Conduct</a>
+</div>
+
+        </section>
+        <section class="copy">
+          <p>&copy; 2016 Steve &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a>
+          </p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
