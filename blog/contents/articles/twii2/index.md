@@ -94,4 +94,5 @@ We haven’t had any new RFCs lately.
 [WilsonGiese]: https://github.com/WilsonGiese
 [#3]: https://github.com/intermezzOS/kernel/issues/3
 [`interrupt_refactor`]: https://github.com/intermezzOS/kernel/tree/interrupt_refactor
-[ashleygwilliams]: http://www.meetup.com/BostonRust/events/230419544/
+[ashleygwilliams]: https://github.com/ashleygwilliams
+[Boston Rust]: http://www.meetup.com/BostonRust/events/230419544/

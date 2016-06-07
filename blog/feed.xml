@@ -21,7 +21,7 @@ machines thanks to Bash on Ubuntu on Windows, and an awesome fix to a
 bug in the scrolling implementation. Read on for more!&lt;/p&gt;
 &lt;p&gt;For other news about the project, you can &lt;a href=&quot;https://twitter.com/intermezzosrs&quot;&gt;follow us on Twitter:
 @intermezzOSrs&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This week’s edition was edited by: &lt;a href=&quot;http://www.meetup.com/BostonRust/events/230419544/&quot;&gt;ashleygwilliams&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This week’s edition was edited by: &lt;a href=&quot;https://github.com/ashleygwilliams&quot;&gt;ashleygwilliams&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;updates-to-the-book&quot;&gt;Updates to the book&lt;/h2&gt;
 &lt;p&gt;Repository for the book: &lt;a href=&quot;https://github.com/intermezzOS/book&quot;&gt;https://github.com/intermezzOS/book&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -65,7 +65,7 @@ size of the buffer. (&lt;a href=&quot;https://github.com/intermezzOS/kernel/pull
 &lt;p&gt;We haven’t had any new RFCs lately.&lt;/p&gt;
 &lt;h2 id=&quot;other-news&quot;&gt;Other news&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/steveklabnik&quot;&gt;steveklabnik&lt;/a&gt; gave a talk about intermezzOS at [Boston Rust] last Wednesday, 25 May 2016&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/steveklabnik&quot;&gt;steveklabnik&lt;/a&gt; gave a talk about intermezzOS at &lt;a href=&quot;http://www.meetup.com/BostonRust/events/230419544/&quot;&gt;Boston Rust&lt;/a&gt; last Wednesday, 25 May 2016&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
