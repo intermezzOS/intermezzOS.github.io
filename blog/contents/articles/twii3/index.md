@@ -12,7 +12,7 @@ bit more frequent in the future! Read on for more!
 For other news about the project, you can [follow us on Twitter:
 @intermezzOSrs](https://twitter.com/intermezzosrs).
 
-This week’s edition was edited by: [steve].
+This week’s edition was edited by: steve.
 
 ## Updates to the book
 
