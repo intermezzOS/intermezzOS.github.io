@@ -5,9 +5,63 @@
     <atom:link href="/blog/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>/blog</link>
     <description></description>
-    <pubDate>Tue, 31 May 2016 00:00:00 +0000</pubDate>
+    <pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
+    <item>
+      <title>These weeks in intermezzOS 3</title>
+      <link>/blog/blog/articles/twii3/</link>
+      <pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">/blog/blog/articles/twii3/</guid>
+      <author></author>
+      <description>&lt;p&gt;It’s been… quite a long time since TWII2. A lot of stuff has happened! There
+were also some long periods of stuff not happening as well. We’ll try to be a
+bit more frequent in the future! Read on for more!&lt;/p&gt;
+&lt;p&gt;For other news about the project, you can &lt;a href=&quot;https://twitter.com/intermezzosrs&quot;&gt;follow us on Twitter:
+@intermezzOSrs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This week’s edition was edited by: steve.&lt;/p&gt;
+&lt;h2 id=&quot;updates-to-the-book&quot;&gt;Updates to the book&lt;/h2&gt;
+&lt;p&gt;Repository for the book: &lt;a href=&quot;https://github.com/intermezzOS/book&quot;&gt;https://github.com/intermezzOS/book&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Many typo and clarification fixes by &lt;code&gt;@chrisccerami&lt;/code&gt;, &lt;code&gt;@thommay&lt;/code&gt;, &lt;code&gt;@kraai&lt;/code&gt;,
+&lt;code&gt;@Ketsuban&lt;/code&gt;, &lt;code&gt;@Seeker14491&lt;/code&gt;, &lt;code&gt;@the-all&lt;/code&gt;, and &lt;code&gt;@roneesh&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/intermezzOS/book/pull/139&quot;&gt;Better instructions for Arch Linux&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/intermezzOS/book/pull/142&quot;&gt;Instructions for Fedora&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/intermezzOS/book/pull/127&quot;&gt;Big improvements to the OSX install scripts for cross-compiling tools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/intermezzOS/book/pull/144&quot;&gt;Some reminder text for those on OSX, who have cross-compiled&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/intermezzOS/book/pull/146&quot;&gt;We now use xargo instead of a manually cross-compiled libcore&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The book hasn’t had new text lately because we’ve been working on improving the
+code for the next sections. The VGA chapter should happen soon!&lt;/p&gt;
+&lt;h2 id=&quot;updates-to-the-kernel&quot;&gt;Updates to the kernel&lt;/h2&gt;
+&lt;p&gt;Repository for the kernel: &lt;a href=&quot;https://github.com/intermezzOS/kernel&quot;&gt;https://github.com/intermezzOS/kernel&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/intermezzOS/kernel/pull/40&quot;&gt;Some experimental refactorings, and a PIC crate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/intermezzOS/kernel/pull/39&quot;&gt;Improvements to text mode!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/intermezzOS/kernel/pull/47&quot;&gt;A keymap for keys, including shift&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/intermezzOS/kernel/pull/31&quot;&gt;A complete re-write of the way interrupts are handled&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/intermezzOS/kernel/pull/49&quot;&gt;Improvements on that, using &lt;code&gt;naked fn&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/intermezzOS/kernel/pull/60&quot;&gt;The VGA driver has been completely re-written in a TDD style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/intermezzOS/kernel/pull/62&quot;&gt;xargo is now used instead of a manually cross-compiled libcore&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;rfcs&quot;&gt;RFCs&lt;/h2&gt;
+&lt;p&gt;Repository for RFCs: &lt;a href=&quot;https://github.com/intermezzOS/rfcs&quot;&gt;https://github.com/intermezzOS/rfcs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We haven’t had any new RFCs lately. As we get more into the design of the
+kernel, this will be a big deal!&lt;/p&gt;
+&lt;h2 id=&quot;other-news&quot;&gt;Other news&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;@ashleygwilliams&lt;/code&gt; gave a talk about intermezzOS at
+&lt;a href=&quot;http://www.rustfest.eu/&quot;&gt;RustFest&lt;/a&gt;! Slides are
+&lt;a href=&quot;https://github.com/intermezzOS/rustfest2016&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In preparation for the workshop at &lt;a href=&quot;http://www.rust-belt-rust.com/&quot;&gt;Rust Belt
+Rust&lt;/a&gt;, &lt;code&gt;@steveklabnik&lt;/code&gt; and &lt;code&gt;@ashleygwilliams&lt;/code&gt;
+have re-done the VGA code, with tests. It’s linked above in the kernel section.
+However, this will become a big exercise during the workshop, and so it has
+&lt;a href=&quot;https://github.com/intermezzOS/vga&quot;&gt;its own repository&lt;/a&gt; as well.&lt;/p&gt;
+&lt;p&gt;Now that we don’t need our own fork of libcore,
+&lt;a href=&quot;https://github.com/intermezzos/libcore&quot;&gt;https://github.com/intermezzos/libcore&lt;/a&gt;
+is no longer needed, and will be deleted soon.&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>This week in intermezzOS 2</title>
       <link>/blog/blog/articles/twii2/</link>

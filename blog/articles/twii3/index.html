@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>These weeks in intermezzOS 3 - The intermezzOS Blog
+    </title>
+    <link rel="alternate" href="/blog/feed.xml" type="application/rss+xml">
+    <link rel="stylesheet" href="/../../public/vendor/Skeleton-2.0.4/css/normalize.css">
+    <link rel="stylesheet" href="/../../public/vendor/Skeleton-2.0.4/css/skeleton.css">
+    <link rel="stylesheet" href="/blog/css/main.css">
+    <link rel="stylesheet" href="/../../public/styles/custom.css">
+  </head>
+  <body class="article-detail">
+    <div class="container">
+      <nav class="u-cf u-full-width">
+        <div class="u-pull-left"><a href="/"><img src="/public/images/logo.png" alt="logo">
+            <h4 class="title">intermezz<strong>OS</strong><span class="subtitle">(a little OS)</span></h4></a></div><a href="https://webchat.freenode.net/#intermezzos" class="u-pull-right button">IRC: #intermezzOS</a>
+      </nav>
+    </div>
+    <header class="header">
+      <div class="content-wrap">
+        <h1>These weeks in intermezzOS 3</h1>
+        <p class="author">Written by <span class="author"><a href="mailto:steve@steveklabnik.com">Steve Klabnik</a></span>
+        </p>
+      </div>
+    </header>
+    <div id="content">
+      <div class="content-wrap">
+        <article class="article">
+          <section class="content"><p>It’s been… quite a long time since <span class="caps">TWII2</span>. A lot of stuff has happened! There
+were also some long periods of stuff not happening as well. We’ll try to be a
+bit more frequent in the future! Read on for&nbsp;more!</p>
+<p>For other news about the project, you can <a href="https://twitter.com/intermezzosrs">follow us on Twitter:
+@intermezzOSrs</a>.</p>
+<p>This week’s edition was edited by:&nbsp;steve.</p>
+<h2 id="updates-to-the-book">Updates to the&nbsp;book</h2>
+<p>Repository for the book: <a href="https://github.com/intermezzOS/book">https://github.com/intermezzOS/book</a></p>
+<ul>
+<li>Many typo and clarification fixes by <code>@chrisccerami</code>, <code>@thommay</code>, <code>@kraai</code>,
+<code>@Ketsuban</code>, <code>@Seeker14491</code>, <code>@the-all</code>, and <code>@roneesh</code>.</li>
+<li><a href="https://github.com/intermezzOS/book/pull/139">Better instructions for Arch&nbsp;Linux</a></li>
+<li><a href="https://github.com/intermezzOS/book/pull/142">Instructions for&nbsp;Fedora</a></li>
+<li><a href="https://github.com/intermezzOS/book/pull/127">Big improvements to the <span class="caps">OSX</span> install scripts for cross-compiling&nbsp;tools</a></li>
+<li><a href="https://github.com/intermezzOS/book/pull/144">Some reminder text for those on <span class="caps">OSX</span>, who have&nbsp;cross-compiled</a></li>
+<li><a href="https://github.com/intermezzOS/book/pull/146">We now use xargo instead of a manually cross-compiled&nbsp;libcore</a></li>
+</ul>
+<p>The book hasn’t had new text lately because we’ve been working on improving the
+code for the next sections. The <span class="caps">VGA</span> chapter should happen&nbsp;soon!</p>
+<h2 id="updates-to-the-kernel">Updates to the&nbsp;kernel</h2>
+<p>Repository for the kernel: <a href="https://github.com/intermezzOS/kernel">https://github.com/intermezzOS/kernel</a></p>
+<ul>
+<li><a href="https://github.com/intermezzOS/kernel/pull/40">Some experimental refactorings, and a <span class="caps">PIC</span>&nbsp;crate</a></li>
+<li><a href="https://github.com/intermezzOS/kernel/pull/39">Improvements to text&nbsp;mode!</a></li>
+<li><a href="https://github.com/intermezzOS/kernel/pull/47">A keymap for keys, including&nbsp;shift</a></li>
+<li><a href="https://github.com/intermezzOS/kernel/pull/31">A complete re-write of the way interrupts are&nbsp;handled</a></li>
+<li><a href="https://github.com/intermezzOS/kernel/pull/49">Improvements on that, using <code>naked fn</code></a></li>
+<li><a href="https://github.com/intermezzOS/kernel/pull/60">The <span class="caps">VGA</span> driver has been completely re-written in a TDD&nbsp;style</a></li>
+<li><a href="https://github.com/intermezzOS/kernel/pull/62">xargo is now used instead of a manually cross-compiled&nbsp;libcore</a></li>
+</ul>
+<h2 id="rfcs">RFCs</h2>
+<p>Repository for RFCs: <a href="https://github.com/intermezzOS/rfcs">https://github.com/intermezzOS/rfcs</a></p>
+<p>We haven’t had any new RFCs lately. As we get more into the design of the
+kernel, this will be a big&nbsp;deal!</p>
+<h2 id="other-news">Other&nbsp;news</h2>
+<p><code>@ashleygwilliams</code> gave a talk about intermezzOS at
+<a href="http://www.rustfest.eu/">RustFest</a>! Slides are
+<a href="https://github.com/intermezzOS/rustfest2016">here</a></p>
+<p>In preparation for the workshop at <a href="http://www.rust-belt-rust.com/">Rust Belt
+Rust</a>, <code>@steveklabnik</code> and <code>@ashleygwilliams</code>
+have re-done the <span class="caps">VGA</span> code, with tests. It’s linked above in the kernel section.
+However, this will become a big exercise during the workshop, and so it has
+<a href="https://github.com/intermezzOS/vga">its own repository</a> as&nbsp;well.</p>
+<p>Now that we don’t need our own fork of libcore,
+<a href="https://github.com/intermezzos/libcore">https://github.com/intermezzos/libcore</a>
+is no longer needed, and will be deleted&nbsp;soon.</p>
+</section>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="content-wrap">
+        <div class="nav"><a href="/blog/">&laquo; Full blog</a></div>
+        <section class="about"><div class="footer center container">
+  intermezzOS <span class="subtitle">(a little OS)</span>
+  |
+  <a href="https://www.github.com/intermezzos">GitHub</a>
+  |
+  <a href="https://webchat.freenode.net/#intermezzos">IRC Freenode</a>
+  |
+  <a href="mailto:steve@steveklabnik.com">Contact</a>
+  |
+  <a href="code-of-conduct.html">Code of Conduct</a>
+</div>
+
+        </section>
+        <section class="copy">
+          <p>&copy; 2016 Steve &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a>
+          </p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
