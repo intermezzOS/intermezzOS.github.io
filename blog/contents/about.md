@@ -7,7 +7,7 @@ view: none
   |
   <a href="https://www.github.com/intermezzos">GitHub</a>
   |
-  <a href="https://webchat.freenode.net/#intermezzos">IRC Freenode</a>
+  <a href="https://discord.gg/BkKMQh7">Chat on Discord</a>
   |
   <a href="mailto:steve@steveklabnik.com">Contact</a>
   |
